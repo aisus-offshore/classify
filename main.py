@@ -25,9 +25,12 @@ import os
 def main():
 #     st.title("Image Classification App")
     st.set_page_config(page_title="Image Classification App", page_icon=":camera:")
-    st.title("Image Classification App")
-    logo_image = "media/logo.png"
-    st.image(logo_image, use_column_width=True)
+    col1, col2 = st.beta_columns([2, 1])
+    with col1:
+        st.title("Image Classification App")
+    with col2:
+        logo_image = "media/logo.png"
+        st.image(logo_image, use_column_width=True)
 
     # Set up sidebar
     model_path = "model/model.pt"
