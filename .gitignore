@@ -1,0 +1,14 @@
+venv/
+model/effNet_blur.h5
+model/effNet_dark.h5
+model/effNet_tw.h5
+model/effNet_views.h5
+__pycache__/
+blur/
+dark/
+dv/
+cw/
+non-cw/
+non/
+down-view/
+*.zip
